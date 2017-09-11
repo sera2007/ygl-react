@@ -1,0 +1,63 @@
+@import "styles/base/variables.scss";
+
+.search-pane {
+	.submit-cell {
+		text-align: right;
+
+		button {
+			margin-left: .6rem;
+			height: 2.6rem;
+		}
+
+		.search-button {
+			width: 5rem;
+		}
+	}	
+}
+
+.search-results-pane {
+	font-size: $search-pane-font-size;
+
+	.item-selector {
+		margin-right: $search-item-icon-margin-right;
+	}
+
+	.item-icon {
+		margin-right: $search-item-icon-margin-right;
+	}
+
+	.cell {
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.postfix-icon-cell {
+		text-align: right;
+	}
+
+	.move-date {
+		display: inline-block;
+		width: 5rem;
+		text-align: center;
+	}
+}
+
+.search-controls-pane {
+	font-size: $search-pane-font-size;
+
+	.cell:last-child {
+		text-align: right;
+	}
+	.cell:nth-child(0n+2) {
+		text-align: center;
+	}
+
+	.left-page-control {
+		margin-left: $paging-control-margin;
+	}
+
+	select {
+		font-size: $search-pane-font-size;
+		margin-left: $paging-control-margin;
+	}
+}

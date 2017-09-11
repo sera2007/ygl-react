@@ -1,0 +1,66 @@
+@import "styles/base/variables.scss";
+
+.nav-bar {
+	padding: 20px 0px 0;
+	width: 180px;
+	box-sizing: border-box;
+	box-shadow: 1px 2px 6px 1px rgba(234, 234, 234, 0.75);
+	.logo{
+		text-align: center;
+		display: block;
+		padding-bottom: 15px;
+	}
+	li{
+		a{
+			position: relative;
+			padding-left: 45px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+			color: #333333;
+			&.active{
+
+			}
+			&:hover, &.active {
+				color: #252c47;
+				font-weight: 700;
+				&:before {
+					position: absolute;
+					left: 0;
+					content: '';
+					top: 0;
+					height: 95%;
+					width: 6px;
+					background-color: #252c47;
+				}
+			}
+			&.more{
+				//padding-top: 1px;
+				border-top:1px solid #d1d1d1;
+				&:hover{
+					&:before{
+						display: none;
+					}
+				}
+				&:after{
+					border-bottom: 2px solid #828282;
+					border-right: 2px solid #828282;
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					margin-left: 14px;
+					height: 8px;
+					margin-top: -4px;
+					pointer-events: none;
+					//position: absolute;
+					//right: 14px;
+					top: 50%;
+					transform-origin: 66% 66%;
+					transform: rotate(45deg);
+					transition: all .15s ease-in-out;
+					width: 8px;
+				}
+			}
+		}
+	}
+}
